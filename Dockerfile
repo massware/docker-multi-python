@@ -8,14 +8,16 @@ RUN . /etc/os-release && \
     apt-get install -y \
         git \
         \
-        python-pip \
         python3-pip \
         \
-        python2.? \
-        python2.?-dev \
-        python3.? \
-        python3.?-dev \
-        python3.?-venv \
+        python3.5 \
+        python3.5-dev \
+        python3.6 \
+        python3.6-dev \
+        python3.7 \
+        python3.7-dev \
+        python3.8 \
+        python3.8-dev \
     && \
     pip3 install tox virtualenv && \
     apt-get --purge autoremove -y gnupg && \

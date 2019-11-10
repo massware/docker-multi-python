@@ -1,4 +1,4 @@
-TAG := fkrull/multi-python
+TAG := massware/multi-python3
 
 all: image versions-file
 
@@ -6,4 +6,4 @@ image:
 	docker build -t $(TAG) .
 
 versions-file:
-	docker run --rm $(TAG) dpkg-query --show python2.? python3.? > versions
+	docker run --rm $(TAG) dpkg-query --show python3.? > versions
