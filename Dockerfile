@@ -17,9 +17,10 @@ RUN . /etc/os-release && \
         python3.7 \
         python3.7-dev \
         python3.8 \
-        python3.8-dev \
-    && \
-    pip3 install tox virtualenv && \
+        python3.8-dev
+
+RUN apt-get install -y libpq-dev && \
+    python3.7 -m pip install tox virtualenv pytest && \
     apt-get --purge autoremove -y gnupg && \
     rm -rf /var/cache/apt/lists && \
     useradd -rm -d /home/app -s /bin/bash -g root -G sudo -u 1000 app

@@ -10,4 +10,4 @@ The image is based on Ubuntu 18.04. Python packages come from [the Deadsnakes PP
 * Python 3.7
 * Python 3.8
 
-This includes the header packages (`python3.{5-8}-dev`) and venv where applicable. In addition, tox and virtualenv are pre-installed.
+This includes the header packages (`python3.{5-8}-dev`) and venv where applicable, psql client. In addition, tox and virtualenv are pre-installed.
